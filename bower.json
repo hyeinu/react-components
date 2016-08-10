@@ -1,0 +1,22 @@
+{
+  "name": "react-components",
+  "authors": [
+    "Hyein <hyeinu65@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.3.0",
+    "bootstrap": "^3.3.7",
+    "node-uuid": "^1.4.7"
+  }
+}

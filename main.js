@@ -10,7 +10,7 @@ const Title = React.createClass({
 
 const Counter = React.createClass({
   render: function(){
-    let {counter, addCount, minusCount} = this.props; //destructuring made its own variable
+    let {counter, addCount, minusCount} = this.props;
     return (
       <div>
         <h3>Counter: {counter}</h3>
@@ -31,7 +31,7 @@ const NewMessageForm = React.createClass({
     this.props.addMsg(this.state.text)
     this.setState({text: ""})
   },
-  onInputChange: function(event){ //event handler
+  onInputChange: function(event){ 
     this.setState({text: event.target.value})
   },
   render: function(){
@@ -122,9 +122,9 @@ const MessageBoard = React.createClass({
   }
 })
 
-const Root = React.createClass({ //create a new component
+const Root = React.createClass({
   getInitialState: function(){
-    return { //returns the OBJECT of the inital state
+    return {
       counter: 0
     }
   },
@@ -152,6 +152,6 @@ const Root = React.createClass({ //create a new component
 });
 
 ReactDOM.render(
-  <Root />, //means there is no children
-  document.getElementById('root') //where you want to render it
+  <Root />,
+  document.getElementById('root')
 );
